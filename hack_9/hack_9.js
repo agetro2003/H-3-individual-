@@ -22,7 +22,18 @@ let bar = {
     alias:"Super Alias"
 }
 let result;
+ result = {}
 
+for (let index = 0; index < Object.keys(foo).length; index++) {
+    result[Object.keys(foo)[index]] =  Object.values(foo)[index];
+    
+}
+for (let index = 0; index < Object.keys(bar).length; index++) {
+    result[Object.keys(bar)[index]] =  Object.values(bar)[index];
+    
+}
+
+console.log(result)
 
 //export result
 module.exports = result; 

@@ -14,6 +14,12 @@ let foo = {
 };
 let result = [];
 
+for (let index = 0; index < 3; index++) {
+    result[index] = [Object.keys(foo)[index],Object.values(foo)[index]];
+    
+}
+
+console.log(result)
 
 //export result
 module.exports = result; 
